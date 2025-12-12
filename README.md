@@ -42,7 +42,7 @@ Menyimpan catatan kehadiran:
 ```
 
 ### Penjelasan singkat
-
+```
 - Relasi: karyawan (1) --- (N) absensi
 - id_karyawan di absensi menjadi FOREIGN KEY
    yang mengacu ke PRIMARY KEY di tabel karyawan.
@@ -54,7 +54,7 @@ Menyimpan catatan kehadiran:
          * tanggal_masuk, tanggal: DATE
          * status_aktif          : ENUM('aktif','nonaktif')
          * status                : ENUM('hadir','sakit','izin','alpa')
-
+```
 ### Relasi
 Satu karyawan memiliki banyak catatan absensi (one-to-many).
 
