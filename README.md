@@ -17,7 +17,9 @@ Repository ini berisi skrip SQL untuk membangun database sederhana sistem kehadi
 
 ## Struktur Database
 
+
 ### 1. Tabel `karyawan`
+```sql
 Menyimpan data master karyawan:
 - id_karyawan (INT, PK)
 - nik (VARCHAR, UNIQUE)
@@ -27,14 +29,17 @@ Menyimpan data master karyawan:
 - tanggal_masuk (DATE)
 - status_aktif (ENUM)
 - created_at (TIMESTAMP)
+  ```
 
 ### 2. Tabel `absensi`
+```sql
 Menyimpan catatan kehadiran:
 - id_absen (INT, PK)
 - id_karyawan (FK → karyawan.id_karyawan)
 - tanggal (DATE)
 - status (ENUM: hadir, sakit, izin, alpa)
 - created_at (TIMESTAMP)
+```
 
 ### Penjelasan singkat
 
